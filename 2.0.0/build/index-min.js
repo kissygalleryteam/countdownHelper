@@ -1,0 +1,2 @@
+/*!build time : 2013-10-17 4:28:40 PM*/
+KISSY.add("kg/countdownHelper/2.0.0/index",function(a,b,c){function d(a,b,c){var e,f=this,g=0;d.superclass.constructor.call(f,{});var h=function(a,b,c){g=Math.round(a);var d=function(){g>0?(b(g),g-=1):(clearInterval(e),c())};e=setInterval(function(a){return function(){d.call(a)}}(this),1e3),d.call(this)};return h(a,b,c),{start:function(){return clearInterval(e),h(g,b,c),!0},stop:function(){return clearInterval(e),!0},getTime:function(){return g}}}return b.all,a.extend(d,c,{},{ATTRS:{}}),d},{requires:["node","base"]});
